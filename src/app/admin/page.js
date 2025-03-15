@@ -34,7 +34,7 @@ export default function AdminPage() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (password === process.env.ADMIN_PASS) {
+    if (password === process.env.NEXT_PUBLIC_ADMIN_PASS) {
       setIsAuthenticated(true);
       localStorage.setItem("adminAuthenticated", "true"); // Remember authentication
       fetchUsers();
